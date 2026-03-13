@@ -45,10 +45,10 @@ pipeline {
     createProcess: true,
 
     credentials: Token(
-        accountName: "",
-        clientId: "${UIPATH_CLIENT_ID}",
-        credentialsId: "APIUserKey"
-    )
+    accountName: "",
+    clientId: "517a9569-a513-416a-bae0-ac7900925d8f",
+    credentialsId: "uipath_app_secret"
+)
 )
             }
         }
