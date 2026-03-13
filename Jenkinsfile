@@ -41,6 +41,7 @@ pipeline {
                     packagePath: "output/*.nupkg",
 
                     entryPointPaths: "Main.xaml",
+					environments: ""
                     traceLevel: "Information",
                     createProcess: true,
 
