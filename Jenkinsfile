@@ -35,22 +35,21 @@ pipeline {
                 echo "Deploying to UAT..."
 
                 UiPathDeploy(
-                    orchestratorAddress: "${UIPATH_ORCH_URL}",
-                    orchestratorTenant: "${UIPATH_TENANT}",
-                    folderName: "${UIPATH_FOLDER_DEV}",
-                    packagePath: "output/*.nupkg",
+    orchestratorAddress: "${UIPATH_ORCH_URL}",
+    orchestratorTenant: "${UIPATH_TENANT}",
+    folderName: "${UIPATH_FOLDER_DEV}",
+    packagePath: "output/*.nupkg",
+    entryPointPaths: "Main.xaml",
+    environments: "",
+    traceLevel: "Information",
+    createProcess: true,
 
-                    entryPointPaths: "Main.xaml",
-					environments: ""
-                    traceLevel: "Information",
-                    createProcess: true,
-
-                    credentials: Token(
-                        accountName: "",
-                        clientId: "${UIPATH_CLIENT_ID}",
-                        credentialsId: "APIUserKey"
-                    )
-                )
+    credentials: Token(
+        accountName: "",
+        clientId: "${UIPATH_CLIENT_ID}",
+        credentialsId: "APIUserKey"
+    )
+)
             }
         }
 
