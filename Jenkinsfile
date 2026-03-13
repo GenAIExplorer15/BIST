@@ -44,10 +44,9 @@ pipeline {
     traceLevel: "Information",
     createProcess: true,
 
-    credentials: Token(
-    accountName: "",
-    clientId: "517a9569-a513-416a-bae0-ac7900925d8f",
-    credentialsId: "uipath_app_secret"
+    credentials: [$class: 'UserPassAuthenticationEntry',
+    credentialsId: 'f8b5f6cc-20b5-4d9c-baf0-cfce9903ddc5'
+]
 )
 )
             }
