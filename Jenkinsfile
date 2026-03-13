@@ -40,8 +40,7 @@ pipeline {
                     folderName: "${UIPATH_FOLDER_DEV}",
                     packagePath: "output/*.nupkg",
 
-                    entryPointPaths: ["Main.xaml"],
-                    environments: [],
+                    entryPointPaths: "Main.xaml",
                     traceLevel: "Information",
                     createProcess: true,
 
