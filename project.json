@@ -1,11 +1,13 @@
 {
-  "name": "BIST_Missing",
-  "projectId": "e8d2ae23-6a9d-4a2f-8475-19510a1fc99a",
-  "description": "Blank Process",
+  "name": "BIST_Missing_Report_Monitoring",
+  "projectId": "3f72fdad-c3c9-43ff-af21-a6129045f1f2",
+  "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
+    "ClearQueueLibrary": "[1.0.1]",
+    "STCoe_AssetToDictionary_Library": "[1.0.2]",
     "UiPath.Excel.Activities": "[2.24.3]",
-    "UiPath.Mail.Activities": "[1.24.2]",
+    "UiPath.Mail.Activities": "[1.18.2]",
     "UiPath.System.Activities": "[24.10.6]",
     "UiPath.Testing.Activities": "[24.10.3]",
     "UiPath.UIAutomation.Activities": "[24.10.10]"
@@ -13,8 +15,8 @@
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "24.10.7.0",
-  "projectVersion": "1.0.0",
+  "studioVersion": "23.10.4.0",
+  "projectVersion": "1.0.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -31,7 +33,8 @@
     "readyForPiP": false,
     "startsInPiP": false,
     "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "pipType": "ChildSession",
+    "robotVersion": "24.10.0"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -44,14 +47,49 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
+    "modernBehavior": false,
     "saveToCloud": false
+  },
+  "arguments": {
+    "input": [
+      {
+        "name": "in_BistMissingReportAsset",
+        "displayName": "in_BistMissingReportAsset",
+        "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": true
+      },
+      {
+        "name": "in_Frequency",
+        "displayName": "in_Frequency",
+        "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": true
+      }
+    ],
+    "output": []
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "af9afded-7e25-40b4-b831-0d875bcc3746",
-      "input": [],
+      "uniqueId": "d577453a-c73a-4230-9746-f0a738091db6",
+      "input": [
+        {
+          "name": "in_BistMissingReportAsset",
+          "displayName": "in_BistMissingReportAsset",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_Frequency",
+          "displayName": "in_Frequency",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        }
+      ],
       "output": []
     }
   ],

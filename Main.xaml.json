@@ -6,8 +6,20 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "in_frequency",
-      "DisplayName": "in_frequency",
+      "Name": "in_BistMissingReportAsset",
+      "DisplayName": "in_BistMissingReportAsset",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "BIST_Report_Missing_Config",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Frequency",
+      "DisplayName": "in_Frequency",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
